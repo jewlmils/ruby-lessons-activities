@@ -1,5 +1,4 @@
 #INHERITANCE
-# Abstract class representing a bird
 class Bird
     def sound
       "Tweet tweet"
@@ -27,7 +26,7 @@ class Bird
 
 #DUCK-TYPING
 def sound(vehicle)
-    puts "Sound: #{bird.make_sound}"
+    puts "Sound: #{vehicle.sound}"
   end
 
   class Car

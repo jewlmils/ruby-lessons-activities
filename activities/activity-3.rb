@@ -17,3 +17,8 @@ describe 'find_smallest_int' do
     expect(find_smallest_int(arr)).to eq(-8)
   end
 end
+
+#naglagay ako ng variable named smallest inside nito ay array
+#tas ginagaw ang code na ito, bale iteration sa each element ng array which is num
+#so if num < smallest, yung num ay magiging equal sa smallest
+#then irereturn ang smallest integer.

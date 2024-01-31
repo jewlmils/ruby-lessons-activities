@@ -18,6 +18,12 @@ class Calculator
     end
   end
   
+    private
+  
+    def Answer(result)
+      puts "The answer is: #{result}"
+    end
+  
   addition = Addition.new(5, 3)
   subtraction = Subtraction.new(8, 2)
   puts "Addition Result: #{addition.calculate}"      
