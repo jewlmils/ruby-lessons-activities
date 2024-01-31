@@ -1,10 +1,10 @@
 CREATE TABLE students(
-	id				integer							PRIMARY KEY,
+	id				    integer							        PRIMARY KEY,
 	first_name		character varying(100)			NOT NULL,
 	middle_name		character varying(100)			NOT NULL,
-	last_name		character varying(100)			NOT NULL,
-	age				integer,
-	location		text
+	last_name		  character varying(100)			NOT NULL,
+	age				    integer,
+	location		  text
 );
 
 INSERT INTO students(id, first_name, middle_name, last_name, age, location)
@@ -34,10 +34,11 @@ WHERE id = 6;
 
 --* JOINS ACTIVITY
 CREATE TABLE research_papers (
-  id integer PRIMARY KEY,
-  student_id integer NOT NULL,
-  grade character varying(1) CHECK (grade IN ('A', 'B', 'C', 'D', 'E', 'F', NULL)),
-  FOREIGN KEY (student_id) REFERENCES students(id)
+  id              integer                   PRIMARY KEY,
+  student_id      integer                   NOT NULL,
+  grade           character varying(1)      CHECK (grade IN ('A', 'B', 'C', 'D', 'E', 'F', NULL)),
+  FOREIGN KEY (student_id) 
+    REFERENCES  students(id)
 );
 
 -- Insert 10 records to the new table 
