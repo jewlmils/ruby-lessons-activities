@@ -45,17 +45,17 @@ CREATE TABLE research_papers (
 -- 2 students should have more than 1 research paper 
 -- 2 students should have 1 ungraded (NULL) research paper
 INSERT INTO research_papers (id, student_id, grade)
-VALUES
-  (1, 1, 'A'),
-  (2, 2, 'B'),
-  (3, 3, NULL),
-  (4, 4, 'A'),
-  (5, 5, 'C'),
-  (6, 1, 'A'),
-  (7, 1, NULL),
-  (8, 2, 'D'),
-  (9, 3, 'E'),
-  (10, 2, 'B');
+VALUES  (1, 1, NULL),
+        (2, 3, NULL),
+        (3, 2, 'B'),
+        (4, 1, 'A'),
+        (5, 2, 'D'),
+        (6, 1, 'A'),
+        (7, 2, 'B'),
+        (8, 3, 'E'),
+        (9, 5, 'C'),
+        (10, 4, 'A');
+
 
 SELECT s.id, s.first_name, s.last_name, r.id, r.grade 
 FROM students s JOIN research_papers r
