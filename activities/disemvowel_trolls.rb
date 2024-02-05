@@ -1,6 +1,6 @@
 #TODO write a method that takes a string and return a new string wil all vowel removed.
 
-def disembowel(comment)
+def disemvowel(comment)
     vowels = ['A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u']
     trolls = ""
     
@@ -12,5 +12,5 @@ def disembowel(comment)
 end
 
 comment = "lol, mama mo."
-puts disembowel(comment) 
+puts disemvowel(comment) 
 
