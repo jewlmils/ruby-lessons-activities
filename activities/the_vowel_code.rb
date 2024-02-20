@@ -17,17 +17,17 @@ def encode(str)
 
   def decode (str)
     vowels = ['a', 'e', 'i', 'o', 'u']
-   string_number_vowel = ''
+   string_vowel = ''
     
     str.each_char do |char|
       if ('1'..'5').include?(char)
-       string_number_vowel += vowels[char.to_i - 1]
+       string_vowel += vowels[char.to_i - 1]
       else
-       string_number_vowel += char
+       string_vowel += char
       end
     end
     
-   string_number_vowel
+   string_vowel
   end
   
   puts decode ('h2ll4 w5rld')
